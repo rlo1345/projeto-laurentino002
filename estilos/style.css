@@ -1,0 +1,377 @@
+@charset "UTF-8"; /* Define a codificação de caracteres como UTF-8 */
+
+/* Estilo global para todos os elementos */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte para todo o site */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no tamanho total do elemento */
+}
+
+/* Estilo para o corpo e HTML da página */
+body, html {
+    background-color: #6A0DAD; /* Define a cor de fundo para roxo */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #1A0A30; /* Cor de fundo escura para o cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo do título dentro do cabeçalho */
+header > h1 {
+    color: wheat; /* Cor do texto do título */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+/* Estilo para o botão de "burguer" (menu responsivo) */
+#burguer {
+    background-color: rgb(30, 4, 56); /* Cor de fundo do botão */
+    color: wheat; /* Cor do texto */
+    display: block; /* Exibe o botão como um bloco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Indica que o elemento é clicável */
+    transition: 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover no botão de "burguer" */
+#burguer:hover {
+    background-color: wheat; /* Muda a cor de fundo */
+    color: rgb(30, 4, 56); /* Muda a cor do texto */
+}
+
+/* Estilo do menu de navegação */
+nav {
+    display: none; /* Oculta o menu inicialmente */
+}
+
+/* Classe "active" para exibir o menu de navegação */
+nav.active {
+    display: block; /* Exibe o menu quando a classe "active" é adicionada */
+}
+
+/* Estilo da lista de itens de navegação */
+nav > ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    text-align: center; /* Centraliza os itens */
+    background-color: rgb(30, 4, 56); /* Cor de fundo do menu */
+    padding: 0; /* Remove o preenchimento */
+}
+
+/* Estilo para os links dentro do menu de navegação */
+nav > ul > li > a {
+    display: block; /* Exibe o link como um bloco */
+    padding: 20px; /* Espaçamento interno */
+    border-top: 2px solid wheat; /* Borda superior em cor clara */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white !important; /* Define a cor do texto como branco */
+    transition: 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover nos links de navegação */
+nav > ul > li > a:hover {
+    background-color: wheat; /* Muda a cor de fundo ao passar o mouse */
+    color: rgb(30, 4, 56); /* Muda a cor do texto */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    width: 98%; /* Largura ajustada para a área principal */
+    max-width: 1900px; /* Limita a largura máxima */
+    padding: 10px; /* Espaçamento interno */
+    margin: auto; /* Centraliza o conteúdo */
+}
+
+/* Estilo para containers com flexbox */
+.container {
+    display: flex; /* Ativa o layout flexbox */
+    flex-flow: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid black; /* Borda preta */
+    margin-top: 100px; /* Espaçamento superior */
+    margin-bottom: 100px; /* Espaçamento inferior */
+}
+
+/* Estilo para os itens dentro do container */
+.item {
+    width: 750px; /* Largura dos itens */
+    height: 320px; /* Altura dos itens */
+}
+
+/* Estilo para os títulos dentro dos itens */
+.item > h2 {
+    text-align: center; /* Alinha o título no centro */
+    color: wheat; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilo para os parágrafos dentro dos itens */
+.item > p {
+    color: wheat; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o botão dentro dos itens */
+.botao > a {
+    color: wheat; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgb(176, 75, 226); /* Cor de fundo */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 0.8em; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte */
+}
+
+/* Efeito de hover no botão */
+.botao > a:hover {
+    background-color: rgb(30, 5, 43); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o container com itens primários */
+.container-primeira {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; /* Espaça os itens ao redor */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 200px; /* Espaçamento inferior */
+}
+
+/* Estilo para os itens primários */
+.primeira {
+    width: 400px; /* Largura do item */
+    height: 150px; /* Altura do item */
+    border: 2px solid black; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+}
+
+/* Estilo para os títulos dentro dos itens primários */
+.primeira > h2 {
+    color: wheat; /* Cor do título */
+    text-align: center; /* Alinha o título ao centro */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Estilo para os parágrafos dentro dos itens primários */
+.primeira > p {
+    color: wheat; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o container de itens a */
+.container-a {
+    background-color: #6A0DAD; /* Cor de fundo */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 100px; /* Espaçamento inferior */
+}
+
+/* Estilo para o primeiro item dentro do container-a */
+.item-1 {
+    width: 910px; /* Largura do item */
+    height: 380px; /* Altura do item */
+    margin-top: 20px; /* Margem superior */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid black; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para o título dentro do item-1 */
+.item-1 > h2 {
+    text-align: center; /* Alinha o título ao centro */
+    color: wheat; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Estilo para os parágrafos dentro do item-1 */
+.item-1 > p {
+    color: wheat; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+/* Estilo para o segundo item dentro do container-a (com fundo de imagem) */
+.item-2 {
+    background: url(../imagem/tablet\ 1024.jpg) no-repeat; /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir a área */
+    background-position: center center; /* Centraliza a imagem de fundo */
+    width: 910px; /* Largura do item */
+    height: 380px; /* Altura do item */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+}
+
+/* Estilo para o título da seção */
+.titulo {
+    color: wheat; /* Cor do título */
+    text-align: center; /* Alinha o título ao centro */
+    margin-top: 100px; /* Margem superior */
+    margin-bottom: 100px; /* Margem inferior */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o container de serviços */
+.container-b {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; /* Espaça os itens ao redor */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilo para os itens de serviços */
+.servico {
+    width: 450px; /* Largura do item */
+    border: 2px solid black; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    height: 150px; /* Altura do item */
+    background-color: #F5DEB3; /* Cor de fundo */
+    margin-top: 30px; /* Margem superior */
+}
+
+/* Estilo para os títulos dentro dos itens de serviços */
+.servico > h2 {
+    color: blueviolet; /* Cor do título */
+    text-align: center; /* Alinha o título ao centro */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para os parágrafos dentro dos itens de serviços */
+.servico > p {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o container da última seção */
+.container-ultima {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    margin-top: 40px; /* Margem superior */
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* Estilo para o primeiro item na última seção */
+.ultma-1 {
+    width: 550px; /* Largura do item */
+    height: 250px; /* Altura do item */
+    border: ; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+}
+
+/* Estilo para o título dentro do item ultma-1 */
+.ultma-1 > h2 {
+    text-align: center; /* Alinha o título ao centro */
+    color: wheat; /* Cor do título */
+}
+
+/* Estilo para os parágrafos dentro do item ultma-1 */
+.ultma-1 > p {
+    text-align: left; /* Alinha o texto à esquerda */
+    color: wheat; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para os outros itens na última seção */
+.ultma-2,{
+    width: 550px; /* Largura dos itens */
+    height: 250px; /* Altura dos itens */
+    border:  ; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+}
+.ultma-2{width: 550px; /* Largura dos itens */
+    height: 250px; /* Altura dos itens */
+    border:  ; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+
+}
+
+/* Estilo para o título na ultma-2 */
+.ultma-2 > h2 {
+    color: wheat; /* Cor do título */
+    text-align: left; /* Alinha o título ao centro */
+    font-weight: normal; /* Peso da fonte */
+    font-size: 1em; /* Tamanho da fonte */
+    padding: 15px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+    margin-left: 10px;
+}
+.ultma-3{
+    width: 550px; /* Largura dos itens */
+    height: 250px; /* Altura dos itens */
+    border:  ; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px 0px 0px 0px; /* Margem superior */
+}
+
+/* Estilo para a lista de links na ultma-3 */
+.ultma-3 ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove o preenchimento */
+}
+
+/* Estilo para os itens de lista na ultma-3 */
+.ultma-3 ul li {
+    margin: 10px 0; /* Margem entre os itens */
+}
+
+/* Estilo para os links na ultma-3 */
+.ultma-3 ul li a {
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: wheat; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    display: flex; /* Flexbox para os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo para os ícones dentro dos links */
+.ultma-3 ul li a i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    margin-left: 20px;
+    font-size: 22px; /* Tamanho do ícone */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover nos links na ultma-3 */
+.ultma-3 ul li a:hover {
+    color: #ffcc00; /* Cor dourada ao passar o mouse */
+}
+
+/* Efeito de hover nos ícones na ultma-3 */
+.ultma-3 ul li a:hover i {
+    color: #ffcc00; /* Ícones mudam para dourado */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #1A0A30; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para o parágrafo dentro do rodapé */
+footer > p {
+    color: wheat; /* Cor do texto */
+    font-size: 0.8em; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}

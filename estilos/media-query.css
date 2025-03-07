@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none; /* Esconde o botão hamburguer */
+    }
+
+    nav { /* Alterado de menu para nav */
+        display: block;
+    }
+
+    nav > ul {
+        display: flex; /* Usa flexbox para melhor alinhamento */
+        justify-content: center; /* Centraliza os itens */
+        padding: 0;
+        min-width: 100%; /* Garante que o menu ocupe toda a largura disponível */
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        padding: 15px 25px; /* Mais espaço interno */
+        box-sizing: border-box; /* Garante que padding não afete o layout total */
+    }
+
+    nav > ul > li > a {
+        text-decoration: none;
+        color: wheat;
+        transition: color 0.3s, background-color 0.3s; /* Transição suave para cor de fundo e texto */
+    }
+
+    nav > ul > li > a:hover {
+        color: rgb(30, 4, 56);
+        background-color: wheat;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+.item {
+    width: 750px; /* Largura dos itens */
+    height: 430px; /* Altura dos itens */
+}
