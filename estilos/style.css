@@ -118,22 +118,23 @@ main {
     text-align: justify; /* Alinha o texto de forma justificada */
     padding: 10px; /* Espaçamento interno */
 }
-
-/* Estilo para o botão dentro dos itens */
 .botao > a {
-    color: wheat; /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado */
-    text-align: center; /* Centraliza o texto */
-    background-color: rgb(176, 75, 226); /* Cor de fundo */
-    padding: 8px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-size: 0.8em; /* Tamanho da fonte */
-    font-weight: normal; /* Peso da fonte */
+    color: wheat;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(176, 75, 226);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: normal;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Efeito de hover no botão */
 .botao > a:hover {
-    background-color: rgb(30, 5, 43); /* Cor de fundo ao passar o mouse */
+    background-color: rgb(140, 50, 200); /* Altera a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
 }
 
 /* Estilo para o container com itens primários */
@@ -291,18 +292,15 @@ main {
 
 /* Estilo para os outros itens na última seção */
 .ultma-2,{
-    width: 550px; /* Largura dos itens */
-    height: 250px; /* Altura dos itens */
-    border:  ; /* Borda preta */
+    width:550px; /* Largura dos itens */
+    height:250px; /* Altura dos itens */
     border-radius: 10px; /* Bordas arredondadas */
-    margin: 10px 0px 0px 0px; /* Margem superior */
+    margin:10px 0px 0px 0px; /* Margem superior */
 }
 .ultma-2{width: 550px; /* Largura dos itens */
     height: 250px; /* Altura dos itens */
-    border:  ; /* Borda preta */
     border-radius: 10px; /* Bordas arredondadas */
     margin: 10px 0px 0px 0px; /* Margem superior */
-
 }
 
 /* Estilo para o título na ultma-2 */
@@ -318,7 +316,6 @@ main {
 .ultma-3{
     width: 550px; /* Largura dos itens */
     height: 250px; /* Altura dos itens */
-    border:  ; /* Borda preta */
     border-radius: 10px; /* Bordas arredondadas */
     margin: 10px 0px 0px 0px; /* Margem superior */
 }

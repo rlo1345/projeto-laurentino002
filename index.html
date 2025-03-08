@@ -40,7 +40,7 @@
                      especializado combina tecnologia e design para criar 
                      experiências únicas e impactantes. Conte com a gente 
                       para transformar suas ideias em projetos de sucesso</p><br>
-                      <h2 class="botao"><a href="#Contanto" >Contate-nos</a></h2>  
+                      <h2 class="botao"><a href="https://wa.me/5531987145421" target="_blank" id="btnAnimado" >Contate-nos</a></h2>  
             </div>
         </section>
         <section>
@@ -184,6 +184,24 @@
         document.getElementById('burguer').addEventListener('click', function() {
             document.querySelector('nav').classList.toggle('active');
         });
+    </script>
+      <script>
+        const botao = document.getElementById("btnAnimado");
+        let escala = 1;
+        let aumentando = true;
+
+        function animarBotao() {
+            if (aumentando) {
+                escala += 0.01; // Aumenta a escala
+                if (escala >= 1.1) aumentando = false; // Inverte o sentido
+            } else {
+                escala -= 0.01; // Diminui a escala
+                if (escala <= 1) aumentando = true;
+            }
+            botao.style.transform = `scale(${escala})`;
+        }
+
+        setInterval(animarBotao, 50); // Anima a cada 50ms
     </script>
     
 </body>
