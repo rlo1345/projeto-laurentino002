@@ -67,7 +67,7 @@ nav > ul > li > a {
     padding: 20px; /* Espaçamento interno */
     border-top: 2px solid wheat; /* Borda superior em cor clara */
     text-decoration: none; /* Remove o sublinhado do link */
-    color: white !important; /* Define a cor do texto como branco */
+    color: white; /* Define a cor do texto como branco */
     transition: 0.3s; /* Transição suave */
 }
 
@@ -122,7 +122,7 @@ main {
     color: wheat;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(176, 75, 226);
+    background-color: rgb(30, 4, 56);
     padding: 8px;
     border-radius: 8px;
     font-size: 0.8em;
@@ -132,7 +132,8 @@ main {
 }
 
 .botao > a:hover {
-    background-color: rgb(140, 50, 200); /* Altera a cor ao passar o mouse */
+    color:rgb(30, 4, 56) ;
+    background-color:wheat; /* Altera a cor ao passar o mouse */
     transform: scale(1.1); /* Aumenta o botão */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
 }
@@ -352,12 +353,12 @@ main {
 
 /* Efeito de hover nos links na ultma-3 */
 .ultma-3 ul li a:hover {
-    color: #ffcc00; /* Cor dourada ao passar o mouse */
+    color: white; /* Cor dourada ao passar o mouse */
 }
 
 /* Efeito de hover nos ícones na ultma-3 */
 .ultma-3 ul li a:hover i {
-    color: #ffcc00; /* Ícones mudam para dourado */
+    color: white; /* Ícones mudam para dourado */
 }
 
 /* Estilo para o rodapé */
